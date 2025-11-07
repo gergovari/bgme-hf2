@@ -1,11 +1,19 @@
+\pgfmathsetmacro\exercisex{57}
+\pgfmathsetmacro\exerciseystart{-221}
+\pgfmathsetmacro\exerciseystep{-16}
+\pgfmathsetmacro\exerciseyone{\exerciseystart + 1*\exerciseystep}
+\pgfmathsetmacro\exerciseytwo{\exerciseystart + 2*\exerciseystep}
+
 \includepdf[pages={1}, pagecommand={
 	\begin{center}
 		\begin{picture}(0,0) 
 				\put(52, -24.5){Vári Gergő}
 				\put(85, -47.5){MQHJ0H}
 				\put(104, -72.5){Szabó Gyula}
-				\put(-42, -202){\pu}
-				\put(-42, -215){\DN}
+				\put(\exercisex, \exerciseystart){\M}
+				\put(\exercisex, \exerciseyone){\n}
+				\put(\exercisex, \exerciseytwo){\j}
+				\put(-110, -285){\hajtomu}
 		\end{picture}
 	\end{center}
 }]{exercise.pdf}

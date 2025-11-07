@@ -10,12 +10,12 @@
 \usetikzlibrary{calc}
 \usepackage{calc}
 
-\usepackage{hyperref} % provides clickable \url command
+\usepackage{hyperref}
 \hypersetup{
-    breaklinks, % allow line breaks in links
-    colorlinks, % allow colors for links
-    allcolors=black, % disable obnoxious colors for \ref, \cite, etc. (optional)
-    urlcolor=blue, % choose color for \url (default)
+    breaklinks,
+    colorlinks,
+    allcolors=black,
+    urlcolor=blue,
 }
 
 \usetikzlibrary {arrows.meta}
@@ -73,13 +73,13 @@
 	\maketitle
 
 	\rule{0pt}{10pt}
-	\begin{center}{\Large{Karimás csőkötés tervezése}}\end{center}
+	\begin{center}{\Large{Motoros hajtómű és tengelykapcsoló választás}}\end{center}
 
 	\rule{0pt}{100pt}
 	\begin{figure}[hbt!]
 		\centering
-		\includegraphics[scale=.34]{./images/assembly.png}
-		\caption{Összeállított modell}
+		\includegraphics[scale=.55]{./images/engine.png}
+		\caption{Motoros hajtómű}
 	\end{figure}
 
 	\input{exercise}
@@ -89,21 +89,9 @@
 	\newpage
 	\pagenumbering{arabic}
 	
-	\input{preplan}
-	\newpage
-
-	\input{vakkarima}
-	\newpage
-
-	\input{tomites}
-	\newpage
-
-	\input{terheles}
-	\input{meghuzas}
-	\newpage
-
-	\input{anyag}
+	\input{usecase}
 	\newpage
 	
-	\input{assembly}
+	\input{drive}
+	\newpage
 \end{document}
