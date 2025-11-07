@@ -1,1 +1,24 @@
 \subsubsection{Ellenőrzés}
+
+Ezen első iterációban ha a minimális szervízfaktort használjuk, akkor sem lesz megfelelő a maximális nyomaték amivel terhelhetjük a rendszert. Szükséges lesz egy nagyobb motort választani ehhez a felhasználáshoz.
+
+\begin{equation}
+	M_\text{Mot} 
+	= f_\text{B} \cdot M_\text{MG}
+	= \Monefbmin \cdot \M
+	= \siunit{\MoneMmot}{\newton\meter}
+\end{equation}
+
+\begin{align}
+	M_\text{Mot} &> {M_2}_\text{max} \\
+	\siunit{\MoneMmot}{\newton\meter} &> \siunit{\MoneMmax}{\newton\meter}
+\end{align}
+
+\begin{center}
+        \begin{tabular}{l}
+		$M_\text{Mot}$: szükséges nyomaték a szervíztényezővel korrigálva \siunit{}{\newton\meter} \\
+		$M_\text{MG}$: munkagép nyomaték igénye \siunit{}{\newton\meter} \\
+		${M_2}_\text{max}$: motor maximális nyomatéka \siunit{}{\newton\meter} \\
+        \end{tabular}
+\end{center}
+

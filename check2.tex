@@ -1,1 +1,45 @@
 \subsubsection{Ellenőrzés}
+
+A második iterációban már megfelel a minimális szervízfaktor, tehát választható ez a motort.
+
+\begin{equation}
+	M_\text{Mot} 
+	= f_\text{B} \cdot M_\text{MG}
+	= \Mtwofbmin \cdot \M
+	= \siunit{\MtwoMmot}{\newton\meter}
+\end{equation}
+
+\begin{align}
+	M_\text{Mot} &< {M_2}_\text{max} \\
+	\siunit{\MtwoMmot}{\newton\meter} &< \siunit{\MtwoMmax}{\newton\meter}
+\end{align}
+
+\begin{center}
+        \begin{tabular}{l}
+		$M_\text{Mot}$: szükséges nyomaték a szervíztényezővel korrigálva \siunit{}{\newton\meter} \\
+		$M_\text{MG}$: munkagép nyomaték igénye \siunit{}{\newton\meter} \\
+		${M_2}_\text{max}$: motor maximális nyomatéka \siunit{}{\newton\meter} \\
+        \end{tabular}
+\end{center}
+
+Így a teljesítményre is ellenőrízhetünk már, aminek szintén megfelel a motor.
+
+\begin{equation}
+	P_\text{be}
+	= \frac{{M_2}_\text{max} \cdot n}{9550 \cdot f_\text{B} \cdot \eta}
+	= \frac{\MtwoMmax \cdot \n}{9550 \cdot \Mtwofbmin \cdot \hatasfok}
+	= \siunit{\Pbe}{\watt}
+\end{equation}
+
+\begin{align}
+	P_\text{be} &< P_\text{Mot} \\
+	\siunit{\Pbe}{\watt} &< \siunit{\MtwoPmot}{\watt}
+\end{align}
+
+\begin{center}
+        \begin{tabular}{l}
+		$M_\text{Mot}$: szükséges nyomaték a szervíztényezővel korrigálva \siunit{}{\newton\meter} \\
+		$M_\text{MG}$: munkagép nyomaték igénye \siunit{}{\newton\meter} \\
+		${M_2}_\text{max}$: motor maximális nyomatéka \siunit{}{\newton\meter} \\
+        \end{tabular}
+\end{center}
