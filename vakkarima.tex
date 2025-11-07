@@ -1,0 +1,141 @@
+\section{Vakkarima vastagsága és karima szabványok}
+
+\subsection[Igénybevétel]{Igénybevétel\protect\footnote{A feladathoz mellékelt segédletből származó számítások és ábrák. (5. oldal, 5-6. ábra)}}
+
+Az igénybevétel egy $d_t$ átmérőjű\footnote{Lásd 3.3 fejezet.} körön átadódó egyenletesen eloszló terhelés és feltehető hogy a törés egy egyenes vonal mentén lesz: a kiszámolt $\sigma$ alapján lehet majd anyagot választani. 
+
+A vakkarima félkör felületére ható erőt a félkörfelület súlypontjában összpontosítva vehetjük fel ($y_k, y_d$). A csavarok $k$ lyukkörén egyenletesen megoszló erő pedig a $k$ átmérőjének megfelelő félkörív súlypontjában összpontosítható. A felvett törési keresztmetszetre ez a két erő ad nyomatékot.
+
+\begin{minipage}{.4\linewidth}
+	\begin{equation}
+		d_t = {d_2}_t = \siunit{\karimaDt}{\mm}
+	\end{equation}
+\end{minipage}
+\begin{minipage}{.4\linewidth}
+	\begin{align}
+		&y_k = \frac{k}{\pi} \\
+		&y_d = \frac{2}{3} \frac{d_t}{\pi}
+	\end{align}
+\end{minipage}
+\begin{figure}[hbt!]
+	\centering
+	\includegraphics[scale=.53]{./images/ykyd.png}
+	\caption{$y_k, y_d$ és az igénybevétel kapcsolata}
+\end{figure}
+
+\begin{equation}
+	b_{\text{min}} 
+	= \frac{d_t}{2} \sqrt{\frac{3p_\text{ü}}{\sigma_{\text{hajl}}} \left(1-\frac{2}{3} \frac{d_t}{k}\right)} 
+	= \frac{\karimaDt}{2} \sqrt{\frac{3\cdot\pumpa}{\anyagsigmahajl} \left(1-\frac{2}{3} \cdot \frac{\karimaDt}{\karimaK}\right)} 
+	= \siunit{\karimabmin}{\mm}
+\end{equation}
+
+\begin{equation}
+	\sigma 
+	= \frac{d_{t}^2}{4} 
+	\frac{3p_{\text{ü}}}{b_{\text{min}}^2}
+	\left(1-\frac{2}{3}\frac{d_t}{K}\right) 
+	= \frac{\karimaDt^2}{4}\cdot
+	\frac{3\cdot\pumpa}{\karimabmin^2}
+	\left(1-\frac{2}{3}\cdot\frac{\karimaDt}{\karimaK}\right) 
+	= \mpa{\karimasigma}
+\end{equation}
+
+\begin{center}
+	\begin{tabular}{l}
+		$d_t$: tőmítés középátmérője \siunit{}{\mm} \\
+		$d_1$: cső csatlakozás külső mérete \siunit{}{\mm} \\
+		$s$: falvastagság \siunit{}{\mm} \\
+		$d_4$: tömítő felület külső átmérője \siunit{}{\mm} \\
+		$k$: csavar lyukköre \siunit{}{\mm} \\
+		$y_k, y_d$: súlypont távolsága a vakkarima kör középpontjától \siunit{}{\mm} \\
+		$b_\text{min}$: karima minimális vastagsága \siunit{}{\mm} \\
+		$p_\text{ü}$: belső üzemi nyomás \siunit{}{\mega\pascal} \\
+		$\sigma$: hajlító feszültség minimális karima vastagsággal \siunit{}{\mega\pascal} \\
+	\end{tabular}
+\end{center}
+
+\newpage
+\subsection{Szabvány -és anyagválasztás}
+A \siunit{\pu}{\bar} üzemi nyomás miatt a \karimaszabvany szabványt használtam a karimához. A vakkarimához ugyanezen okból a \vakkarimaszabvany szabványt választottam. Munkaléces\footnote{A feladathoz mellékelt segédletből ötletet merítve. (6. oldal)} felületek kellenek, hogy ne az egész sík felületet kelljen megmunkálni a tömítésnek. Anyagnak S235\footnote{Mellékelt segédletből választva. (5. oldal, 1. táblázat)} acél megfelel. ($\sigma_\text{hajl} = \mpa{\anyagsigmahajl}$)
+
+\begin{minipage}{.55\linewidth}
+	\begin{equation}
+		n 
+		= \frac{\sigma_{\text{hajl}}}{\sigma}
+		= \frac{\anyagsigmahajl}{\karimasigma} 
+		= \siunit{\kariman}{-}
+	\end{equation}
+\end{minipage}
+\begin{minipage}{.4\linewidth}
+	\begin{tabular}{l}
+		$\sigma_\text{hajl}$: anyag \\ hajlító feszültsége \siunit{}{\mega\pascal} \\
+		$n$: biztonsági tényező \siunit{}{-} \\
+	\end{tabular}
+\end{minipage}
+Tehát az anyag $\siunit{\kariman}{-}$ biztonsági tényezővel felel meg a várt terhelésnek.
+
+\subsection[Előtervek]{Előtervek\protect\footnote{Előtervek a \href{http://www.pipingpipeline.com/en-1092-1-type-11-wn-flgs.html}{\karimaszabvany} és a \href{https://www.heco.de/webservice/downloads/product-sheet/1467/en/heco-product-sheet-1467-Stainless-steel-blind-flanges-DIN-EN-more-pressure-ranges-PN-100.pdf}{\vakkarimaszabvany} szabványok alapján.}}
+\begin{figure}[hbt!]
+	\centering
+	\includegraphics[scale=.55]{./images/vakkarima.png}
+	\caption{Vakkarima előtervének rajza}
+\end{figure}
+\begin{minipage}{.3\linewidth}
+	\begin{align*}
+		&D = \siunit{\karimaD}{\mm} \\
+		&f = \siunit{\karimaf}{\mm} \\
+		&d_4 = \siunit{\karimadfour}{\mm} \\
+		&d_2 = \siunit{\karimadtwo}{\mm} \\
+		&K = \siunit{\karimaK}{\mm} \\
+		&b = \siunit{\karimab}{\mm} \\
+	\end{align*}
+\end{minipage}
+\begin{minipage}{.6\linewidth}
+	\begin{tabular}{l}
+		$D$: vakkarima külső átmérője \siunit{}{\mm} \\
+		$f$: kiugrás \siunit{}{\mm} \\
+		$d_4$: tömítő felület külső átmérője \siunit{}{\mm} \\
+		$d_2$: csavar lyukköre \siunit{}{\mm} \\
+		$K$: csavarok középátmérője \siunit{}{\mm} \\
+		$b$: vakkarima magassága \siunit{}{\mm} \\
+	\end{tabular}
+\end{minipage}
+
+\newpage
+\begin{figure}[hbt!]
+	\centering
+	\includegraphics[scale=.53]{./images/karima.png}
+	\caption{Karima előtervének rajza}
+\end{figure}
+
+\begin{minipage}{.4\linewidth}
+	\begin{align*}
+		&D = \siunit{\karimaD}{\mm} \\
+		&f = \siunit{\karimaf}{\mm} \\
+		&d_4 = \siunit{\karimadfour}{\mm} \\
+		&d_2 = \siunit{\karimadtwo}{\mm} \\
+		&s = \siunit{\karimas}{\mm} \\
+		&N = \siunit{\karimaN}{db} \\
+		&K = \siunit{\karimaK}{\mm} \\
+		&b = \siunit{\karimab}{\mm} \\
+		&d_3 = \siunit{\karimadthree}{\mm} \\
+		&d_1 = \siunit{\karimadone}{\mm} \\
+		&d_\text{cs} = \text{M24} \\
+		&h = \siunit{\karimah}{\mm}
+	\end{align*}
+\end{minipage}
+\begin{minipage}{.5\linewidth}
+	$D$: karima külső átmérője \siunit{}{\mm} \\
+	$f$: kiugrás \siunit{}{\mm} \\
+	$d_4$: tömítő felület külső átmérője \siunit{}{\mm} \\
+	$d_2$: csavar lyukköre \siunit{}{\mm} \\
+	$s$: falvastagság \siunit{}{\mm} \\
+	$N$: csavarok \siunit{}{db} \\
+	$K$: csavarok középátmérője \siunit{}{\mm} \\
+	$b$: csavarok alap \\és tömítési sík távolsága \siunit{}{\mm} \\
+	$d_3$: kúp alsó átmérője \siunit{}{\mm} \\
+	$d_1$: cső csatlakozás külső mérete \siunit{}{\mm} \\
+	$d_\text{cs}$: csavarmenet \\szabványos mérete \siunit{}{\mm} \\
+	$h$: karima magassága \siunit{}{\mm}
+\end{minipage}

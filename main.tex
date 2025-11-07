@@ -1,0 +1,109 @@
+\documentclass{article}
+
+\usepackage[provide=*, magyar]{babel}
+
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{calc}
+\usepackage{calc}
+
+\usepackage{hyperref} % provides clickable \url command
+\hypersetup{
+    breaklinks, % allow line breaks in links
+    colorlinks, % allow colors for links
+    allcolors=black, % disable obnoxious colors for \ref, \cite, etc. (optional)
+    urlcolor=blue, % choose color for \url (default)
+}
+
+\usetikzlibrary {arrows.meta}
+\usepgfplotslibrary{fillbetween}
+
+\usepackage{pdfpages}
+
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[table]{xcolor}
+\usepackage{multicol}
+\usepackage{footnote}
+
+\makesavenoteenv{tabular}
+
+\DeclareSIUnit\bar{bar}
+
+\newcommand{\siunit}[2]{
+	\SI{#1}{[#2]}
+}
+
+\newcommand{\n}[1]{
+	\siunit{#1}{\newton}
+}
+\newcommand{\nmm}[1]{
+	\siunit{#1}{\newton\mm}
+}
+\newcommand{\kn}[1]{
+	\siunit{#1}{\kilo\newton}
+}
+\newcommand{\knm}[1]{
+	\siunit{#1}{\kilo\newton\meter}
+}
+\newcommand{\mpa}[1]{
+	\siunit{#1}{\mega\pascal}
+}
+
+\newcommand{\equal}[2]{
+	\sum{#1} := 0 = #2
+}
+
+\newcommand{\circled}[1]{
+	\raisebox{.5pt}{\textcircled{\raisebox{-.9pt} {#1}}}
+}
+
+\input{title}
+\input{structure}
+
+\begin{document}
+	\input{data}
+	\pagenumbering{gobble}
+
+	\maketitle
+
+	\rule{0pt}{10pt}
+	\begin{center}{\Large{Karimás csőkötés tervezése}}\end{center}
+
+	\rule{0pt}{100pt}
+	\begin{figure}[hbt!]
+		\centering
+		\includegraphics[scale=.34]{./images/assembly.png}
+		\caption{Összeállított modell}
+	\end{figure}
+
+	\input{exercise}
+	
+	\tableofcontents
+
+	\newpage
+	\pagenumbering{arabic}
+	
+	\input{preplan}
+	\newpage
+
+	\input{vakkarima}
+	\newpage
+
+	\input{tomites}
+	\newpage
+
+	\input{terheles}
+	\input{meghuzas}
+	\newpage
+
+	\input{anyag}
+	\newpage
+	
+	\input{assembly}
+\end{document}
