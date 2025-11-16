@@ -11,4 +11,5 @@
 \contentsline {subsubsection}{\numberline {2.2.3}Ellenőrzés}{5}{subsubsection.2.2.3}%
 \contentsline {section}{\numberline {3}Tengelykapcsoló}{6}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Méretezés átvitt nyomatékra}{6}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Méretezés ütésszerű nyomatékokra}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.2}Méretezés ütésszerű nyomatékokra}{7}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Rajz}{8}{subsection.3.3}%

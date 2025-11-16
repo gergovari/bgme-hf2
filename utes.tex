@@ -1,2 +1,63 @@
 \subsection{Méretezés ütésszerű nyomatékokra}
 
+Az alábbi számolás alapján erre is megfelel a tengelykapcsoló.
+
+\begin{align}
+	&J_\text{k} 
+	= \siunit{\kapcsJ}{\kilo\gram\meter^2}\\
+	&J_\text{A}
+	= J_\text{Mot} + J_\text{k}
+	= \MtwoJmot + \kapcsJ
+	= \siunit{\JA}{\kilo\gram\meter^2} \\
+	&J_\text{L}
+	= J_\text{ex.} + J_\text{k}
+	= \j + \kapcsJ
+	= \siunit{\JL}{\kilo\gram\meter^2} \\
+	&M_\text{A} 
+	= \frac{J_\text{L}}{J_\text{A} + J_\text{L}}
+	= \frac{\JL}{\JA + \JL}
+	= \siunit{\MA}{-}
+\end{align}
+\begin{align}
+	&T_\text{AS} 
+	= 2\cdot T_\text{KN}
+	= 2 \cdot \TKN
+	= \siunit{\TAS}{\newton\meter}\\
+	&S_\text{A} 
+	= \siunit{\kapcsSA}{-} \\
+	&T_\text{S} 
+	= T_\text{AS} \cdot M_\text{A} \cdot S_\text{A}
+	= \TAS \cdot \MA \cdot \kapcsSA
+	= \siunit{\TS}{\newton\meter}
+\end{align}
+\begin{align}
+	S_\text{Z} 
+	&= \siunit{\kapcsSZ}{-}\\
+	T_\text{N}
+	&= 0\\
+	{T_\text{K}}_\text{max}
+	&> T_\text{S} \cdot S_\text{Z} \cdot S_\text{t} 
+	+ T_\text{N} \cdot S_\text{t} \\
+	& \TKMAX > \TS \cdot \kapcsSZ \cdot \St \\
+	\siunit{\TKMAX}{\newton\meter} 
+	&> \siunit{\TK}{\newton\meter}
+\end{align}
+
+\begin{center}
+        \begin{tabular}{l}
+		$J_\text{k}$: tengelykapcsoló 
+		tehetetlenségi nyomatéka\protect\footnote{A \href{https://www.ktr.com/catalog/index.php?catalog=DriveTechnology}{KTR katalógusban} található táblázat alapján. (60. oldal, "ROTEX Complete coupling types")}
+		\siunit{}{\kilo\gram\meter^2} \\
+		$J_\text{A}$: motor oldal 
+		tehetetlenségi nyomatéka \siunit{}{\kilo\gram\meter^2} \\
+		$J_\text{L}$: hajtott oldal 
+		tehetetlenségi nyomatéka \siunit{}{\kilo\gram\meter^2} \\
+		$M_\text{A}$: tehetetlenségi nyomaték együttható \siunit{}{-} \\\\
+		$T_\text{AS}$: indítási nyomaték \siunit{}{\newton\meter} \\
+		$T_\text{S}$: kezdeti nyomaték \siunit{}{\newton\meter} \\
+		$S_\text{A}$: terhelési tényező\protect\footnote{A \href{https://www.ktr.com/catalog/index.php?catalog=DriveTechnology}{KTR katalógusban} található táblázat alapján. (15. oldal, "Shock factor")} \siunit{}{-} \\\\
+		${T_\text{K}}_\text{max}$: kezdeti nyomatéklöket a rendszeren \\a terhelési nyomaték ráadása nélkül\protect\footnote{A \href{https://www.ktr.com/catalog/index.php?catalog=DriveTechnology}{KTR katalógusban} találhatóak alapján lett az értéke választva. (33. oldal)} \siunit{}{\newton\meter} \\
+		$S_\text{Z}$: indítási tényező\protect\footnote{A \href{https://www.ktr.com/catalog/index.php?catalog=DriveTechnology}{KTR katalógusban} található táblázat alapján. (15. oldal, "Start-up factor")} \siunit{}{-} \\
+		$T_\text{N}$: állandó nyomaték \siunit{}{\newton\meter} \\
+        \end{tabular}
+\end{center}
