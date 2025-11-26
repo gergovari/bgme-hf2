@@ -3,11 +3,11 @@
 \contentsline {section}{\numberline {2}Motoros hajtómű}{2}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Első iteráció}{2}{subsection.2.1}%
 \contentsline {subsubsection}{\numberline {2.1.1}Terhelési osztály}{2}{subsubsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.2}Szervízfaktor}{2}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.2}Üzemtényező}{3}{subsubsection.2.1.2}%
 \contentsline {subsubsection}{\numberline {2.1.3}Ellenőrzés}{3}{subsubsection.2.1.3}%
 \contentsline {subsection}{\numberline {2.2}Második iteráció}{4}{subsection.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.1}Terhelési osztály}{4}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}Szervízfaktor}{4}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2}Üzemtényező}{4}{subsubsection.2.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.3}Ellenőrzés}{5}{subsubsection.2.2.3}%
 \contentsline {section}{\numberline {3}Tengelykapcsoló}{6}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Méretezés átvitt nyomatékra}{6}{subsection.3.1}%
